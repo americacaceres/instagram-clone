@@ -76,7 +76,7 @@
 .card {
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px 1px #888888;
+
     height: auto;
     width: 450px;
     margin-bottom: 30px;
@@ -129,4 +129,29 @@
     cursor: pointer;
 
 
+}
+.handle-name {
+    display: flex;
+    align-items: center;
+}
+
+.icon-area, .comment, .add-comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caption-area, .comment-area {
+    padding: 10px;
+}
+
+.comment > i {
+    font-size: 10px;
+
+}
+
+.add-comment {
+  font-size:  20px;
+  padding: 10px;
+  color: #888888;
+  margin-bottom: 5px;
 }
