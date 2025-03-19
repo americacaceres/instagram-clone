@@ -30,7 +30,9 @@
     align-items: center;
     justify-content: space-between;
 }
- 
+.main::-webkit-scrollbar {
+    display: none;
+}
 #brand_logo {
     width: 10vw;
     padding: 5px ;
@@ -77,6 +79,8 @@
     box-shadow: 1px 1px 10px 1px #888888;
     height: auto;
     width: 450px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .main-img {
@@ -90,6 +94,10 @@
     overflow-y: none;
     white-space: nowrap;
     width: 100%;
+    box-sizing: border-box;
+}
+.stories::-webkit-scrollbar {
+    display: none;
 }
 
 .story {
@@ -106,4 +114,19 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
+}
+
+.next-arrow {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    opacity: 0.8;
+    font-weight: bolder;
+    cursor: pointer;
+
+
 }
