@@ -25,6 +25,10 @@
     overflow-x: none;
     overflow-y: scroll;
     width: 80vw;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
  
 #brand_logo {
@@ -65,4 +69,41 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px #888888;
+    height: auto;
+    width: 450px;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+}
+
+.stories {
+    overflow-x: scroll;
+    overflow-y: none;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.story {
+    display: inline-block;
+    text-align: center;
+    padding-right: 10px;
+
+}
+.story > p {
+    font-size: 12px;
+}
+
+.story > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
